@@ -1,5 +1,5 @@
 export class Toy {
-    type: string;
+    public type: string;
 
     constructor(kind?: any) {
         this.type = kind;
@@ -9,9 +9,13 @@ export class Toy {
         return this.type;
     }
 
+    setType(toy: string) {
+        this.type = toy;
+    }
+
     isMoved(sound: string) {
         console.log(sound);
     }
 }
 
-const toy: Toy = new Toy('eco');
+// const toy: Toy = new Toy('eco');

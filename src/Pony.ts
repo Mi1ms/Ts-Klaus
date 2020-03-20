@@ -6,6 +6,8 @@ export class Pony extends Toy {
     
     constructor() {
         super();
+        super.setType(`Pony #${Pony._nb}`);
+
         this.id = Pony._nb;
         this.toString();
         Pony._nb++;

@@ -13,8 +13,9 @@ class DragonBall extends Figurine {
 
     constructor(character: DBHeroe) {
         super();
-        console.log(`
-        ${character} is singing -->
+        super.setType(`DragonBall figurine ${character}`)
+        
+        console.log(`${character} is singing -->
             CHA-LA HEAD CHA-LA
             Nani ga okite mo kibun wa heno-heno kappa
             CHA-LA HEAD CHA-LA
